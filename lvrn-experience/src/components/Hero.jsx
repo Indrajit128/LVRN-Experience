@@ -46,7 +46,7 @@ const Hero = () => {
                     </div>
                     <div className="mb-8 flex justify-center">
                         <TrueFocus
-                            sentence="CREATING UNFORGETTABLE MOMENTS"
+                            sentence="CREATING ICONIC MOMENTS"
                             manualMode={false}
                             blurAmount={10}
                             borderColor="#E10600"
