@@ -83,7 +83,7 @@ const Contact = () => {
                         </p>
 
                         <div className="space-y-8">
-                            <div className="flex items-center group">
+                            <a href="mailto:info@lvrnexperience.com" className="flex items-center group">
                                 <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-primary text-2xl shadow-lg border border-gray-100 group-hover:bg-primary group-hover:text-white transition-all">
                                     <FiMail />
                                 </div>
@@ -91,17 +91,17 @@ const Contact = () => {
                                     <p className="text-sm font-black text-gray-400 uppercase tracking-widest">Email Us</p>
                                     <p className="text-xl font-bold">info@lvrnexperience.com</p>
                                 </div>
-                            </div>
+                            </a>
 
-                            <div className="flex items-center group">
+                            <a href="https://www.instagram.com/lvrn.experience?igsh=bDBycXJidzAzZTlr" target="_blank" rel="noopener noreferrer" className="flex items-center group">
                                 <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-primary text-2xl shadow-lg border border-gray-100 group-hover:bg-primary group-hover:text-white transition-all">
                                     <FiInstagram />
                                 </div>
                                 <div className="ml-6">
                                     <p className="text-sm font-black text-gray-400 uppercase tracking-widest">Follow Us</p>
-                                    <p className="text-xl font-bold">@lvrn.experience</p>
+                                    <p className="text-xl font-bold">lvrn.experience</p>
                                 </div>
-                            </div>
+                            </a>
 
                             <div className="flex items-center group">
                                 <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-primary text-2xl shadow-lg border border-gray-100 group-hover:bg-primary group-hover:text-white transition-all">

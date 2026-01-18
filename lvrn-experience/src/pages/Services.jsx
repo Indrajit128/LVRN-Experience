@@ -86,14 +86,10 @@ const Services = () => {
                         <p className="text-gray-400 text-lg mb-8 leading-relaxed">
                             We understand the zeitgeist. Our edge comes from being on the ground, witnessing the shifts in music and events as they happen.
                         </p>
-                        <div className="grid grid-cols-2 gap-8">
+                        <div className="grid grid-cols-1 gap-8">
                             <div>
                                 <h4 className="text-3xl font-black text-primary mb-2">100%</h4>
                                 <p className="text-sm uppercase tracking-widest text-gray-500 font-bold">Authenticity</p>
-                            </div>
-                            <div>
-                                <h4 className="text-3xl font-black text-primary mb-2">50+</h4>
-                                <p className="text-sm uppercase tracking-widest text-gray-500 font-bold">Events Done</p>
                             </div>
                         </div>
                     </div>

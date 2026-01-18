@@ -16,7 +16,7 @@ const Footer = () => {
                             Creating unforgettable music and event experiences for the youth culture. From artist management to live shows, we are the pulse of nightlife.
                         </p>
                         <div className="flex space-x-4">
-                            <a href="https://www.instagram.com/lvrn.experience?igsh=bDBycXJidzAzZTlr" target="_blank" rel="noreferrer" className="h-10 w-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors text-white hover:scale-110">
+                            <a href="https://www.instagram.com/lvrn.experience?igsh=bDBycXJidzAzZTlr" target="_blank" rel="noopener noreferrer" className="h-10 w-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors text-white hover:scale-110">
                                 <FaInstagram size={20} />
                             </a>
                             {/* Other socials can remain as placeholders or follow the same pattern */}

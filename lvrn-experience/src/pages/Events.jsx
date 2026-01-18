@@ -8,37 +8,37 @@ const Events = () => {
     const events = [
         {
             id: 1,
-            name: 'LVRN Summer Bash',
-            date: 'Aug 15, 2026',
-            time: '9:00 PM',
-            location: 'The Warehouse District',
+            name: 'Upcoming Winter Concert',
+            date: 'Coming Soon',
+            time: '',
+            location: 'Kora Kendra Ground No. 4, Borivali (W)',
             type: 'upcoming',
             image: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&q=80&w=800'
         },
         {
             id: 2,
-            name: 'Midnight Sessions #04',
-            date: 'Sept 02, 2026',
-            time: '11:00 PM',
-            location: 'Neon Club',
+            name: 'Holi Bash',
+            date: 'Coming Soon',
+            time: '',
+            location: 'To be announced',
             type: 'upcoming',
             image: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&q=80&w=800'
         },
         {
             id: 3,
-            name: 'Neon Nights Festival',
-            date: 'Oct 20, 2025',
-            time: '8:00 PM',
-            location: 'Skyline Arena',
-            type: 'past',
+            name: 'Gujarati Music Event',
+            date: 'Coming Soon',
+            time: '',
+            location: 'To be announced',
+            type: 'upcoming',
             image: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80&w=800'
         },
         {
             id: 4,
-            name: 'Vibe Check: Winter Edition',
-            date: 'Dec 12, 2025',
-            time: '10:00 PM',
-            location: 'Basement 01',
+            name: 'Kailash Kher Live Concert',
+            date: '21st Dec, 2025',
+            time: '7:00 PM',
+            location: 'Infinity Mall, Malad West, Mumbai',
             type: 'past',
             image: 'https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&q=80&w=800'
         }
@@ -101,7 +101,7 @@ const Events = () => {
                                                 <FiMapPin className="mr-3 text-primary" /> {event.location}
                                             </div>
                                             <div className="flex items-center text-gray-400 font-medium col-span-2">
-                                                <FiClock className="mr-3 text-primary" /> {event.time}
+                                                <FiClock className="mr-3 text-primary" /> {event.type === 'upcoming' ? 'Coming Soon' : event.time}
                                             </div>
                                         </div>
                                         <button className="w-full py-4 bg-primary text-white rounded-2xl font-black hover:bg-red-700 transition-colors uppercase tracking-widest">
