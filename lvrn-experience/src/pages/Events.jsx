@@ -22,7 +22,7 @@ const Events = () => {
             time: '11:00 PM',
             location: 'Neon Club',
             type: 'upcoming',
-            image: 'https://images.unsplash.com/photo-1514525253344-99a30b59b3ae?auto=format&fit=crop&q=80&w=800'
+            image: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&q=80&w=800'
         },
         {
             id: 3,
