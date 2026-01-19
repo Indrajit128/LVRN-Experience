@@ -103,15 +103,15 @@ const Contact = () => {
                                 </div>
                             </a>
 
-                            <div className="flex items-center group">
+                            <a href="tel:+917738007357" className="flex items-center group">
                                 <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-primary text-2xl shadow-lg border border-gray-100 group-hover:bg-primary group-hover:text-white transition-all">
-                                    <FiMapPin />
+                                    <FiPhone />
                                 </div>
                                 <div className="ml-6">
-                                    <p className="text-sm font-black text-gray-400 uppercase tracking-widest">Visit Us</p>
-                                    <p className="text-xl font-bold">B/702, Ng ocean pearl, Shivsena Galli, Near unique gardens, Kanakia road, Mira road east, Thane - 401107</p>
+                                    <p className="text-sm font-black text-gray-400 uppercase tracking-widest">Call Us</p>
+                                    <p className="text-xl font-bold">+91 77380 07357</p>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
 

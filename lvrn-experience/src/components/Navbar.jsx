@@ -35,7 +35,7 @@ const Navbar = () => {
                         </Link>
                     ))}
                     <Link to="/events" className="bg-primary text-white px-6 py-2 rounded-full font-bold">
-                        Get Tickets
+                        Know More
                     </Link>
                 </div>
 
@@ -58,7 +58,7 @@ const Navbar = () => {
                     </Link>
                 ))}
                 <Link to="/events" onClick={() => setIsOpen(false)} className="bg-primary text-white px-8 py-3 rounded-full font-bold text-xl">
-                    Get Tickets
+                    Know More
                 </Link>
             </div>
         </nav>

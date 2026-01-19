@@ -105,7 +105,7 @@ const Events = () => {
                                             </div>
                                         </div>
                                         <button className="w-full py-4 bg-primary text-white rounded-2xl font-black hover:bg-red-700 transition-colors uppercase tracking-widest">
-                                            {event.type === 'upcoming' ? 'Get Tickets' : 'Event Recap'}
+                                            {event.type === 'upcoming' ? 'Know More' : 'Event Recap'}
                                         </button>
                                     </div>
                                 </motion.div>
