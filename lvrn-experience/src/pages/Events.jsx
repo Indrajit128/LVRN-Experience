@@ -9,16 +9,16 @@ const Events = () => {
         {
             id: 1,
             name: 'Upcoming Winter Concert',
-            date: 'Coming Soon',
+            date: '14th March, 2026',
             time: '',
-            location: 'Kora Kendra Ground No. 4, Borivali (W)',
+            location: 'To be Announced',
             type: 'upcoming',
             image: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&q=80&w=800'
         },
         {
             id: 2,
             name: 'Holi Bash',
-            date: 'Coming Soon',
+            date: '4th March, 2026',
             time: '',
             location: 'To be announced',
             type: 'upcoming',
