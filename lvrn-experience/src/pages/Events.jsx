@@ -57,7 +57,7 @@ const Events = () => {
         >
             <section className="py-20 bg-accent text-white">
                 <div className="container mx-auto px-6">
-                    <h1 className="text-5xl md:text-8xl font-black mb-8 italic">THE <span className="text-primary">LINEUP</span></h1>
+                    <h1 className="text-4xl md:text-7xl font-black mb-8 italic">THE <span className="text-primary">LINEUP</span></h1>
 
                     <div className="flex space-x-6 border-b border-white/10 mb-12">
                         {['upcoming', 'past'].map((type) => (
@@ -94,7 +94,7 @@ const Events = () => {
                                         </div>
                                     </div>
                                     <div className="p-8">
-                                        <h3 className="text-3xl font-black mb-6 group-hover:text-primary transition-colors">{event.name}</h3>
+                                        <h3 className="text-2xl font-black mb-6 group-hover:text-primary transition-colors">{event.name}</h3>
                                         <div className="grid grid-cols-2 gap-4 mb-8">
                                             <div className="flex items-center text-gray-400 font-medium">
                                                 <FiCalendar className="mr-3 text-primary" /> {event.date}

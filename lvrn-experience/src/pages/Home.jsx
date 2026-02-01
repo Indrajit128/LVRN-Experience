@@ -23,7 +23,7 @@ const Home = () => {
                         viewport={{ once: true }}
                         className="mb-16"
                     >
-                        <h2 className="text-4xl md:text-7xl font-black mb-6 uppercase tracking-tighter leading-none">WE <span className="text-primary tracking-tighter">DEFINE</span> EXPERIENCE</h2>
+                        <h2 className="text-3xl md:text-6xl font-black mb-6 uppercase tracking-tighter leading-none">WE <span className="text-primary tracking-tighter">DEFINE</span> EXPERIENCE</h2>
                         <div className="w-32 h-2 bg-primary mx-auto" />
                     </motion.div>
 
@@ -42,8 +42,8 @@ const Home = () => {
                                 whileHover={{ y: -10 }}
                                 className="p-10 bg-lightGray rounded-3xl text-left border-l-4 border-transparent hover:border-primary transition-all duration-500 shadow-sm hover:shadow-2xl"
                             >
-                                <h3 className="text-2xl md:text-3xl font-black mb-6 uppercase tracking-tighter leading-none">{service.title}</h3>
-                                <p className="text-base md:text-lg text-gray-600 mb-8 font-bold leading-relaxed">{service.desc}</p>
+                                <h3 className="text-xl md:text-2xl font-black mb-6 uppercase tracking-tighter leading-none">{service.title}</h3>
+                                <p className="text-sm md:text-base text-gray-600 mb-8 font-bold leading-relaxed">{service.desc}</p>
                                 <div className="w-12 h-1.5 bg-primary/30" />
                             </motion.div>
                         ))}
@@ -64,11 +64,11 @@ const Home = () => {
                                 viewport={{ once: true }}
                             >
                                 <span className="text-primary font-black uppercase tracking-[0.4em] mb-4 block italic">SAVE THE DATE</span>
-                                <h2 className="text-6xl md:text-8xl font-black mb-6 leading-none uppercase tracking-tighter">
+                                <h2 className="text-5xl md:text-7xl font-black mb-6 leading-none uppercase tracking-tighter">
                                     HOLI <span className="text-white italic">BASH</span> <br />
                                     2K26
                                 </h2>
-                                <p className="text-xl md:text-2xl text-gray-400 font-bold mb-10 max-w-lg leading-relaxed uppercase">
+                                <p className="text-lg md:text-xl text-gray-400 font-bold mb-10 max-w-lg leading-relaxed uppercase">
                                     The ultimate celebration of colors. Featuring heavyweights <span className="text-white underline decoration-primary underline-offset-8">Juggy Sandhu</span> & <span className="text-white underline decoration-primary underline-offset-8">DJ Dastan</span>.
                                 </p>
                                 <div className="flex flex-col sm:flex-row gap-6">

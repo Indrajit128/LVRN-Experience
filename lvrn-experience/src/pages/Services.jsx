@@ -37,8 +37,8 @@ const Services = () => {
         >
             <section className="py-20 container mx-auto px-6">
                 <div className="max-w-3xl mb-16">
-                    <h1 className="text-6xl md:text-8xl font-black mb-6 tracking-tighter">WHAT WE <span className="text-primary italic">BRING</span></h1>
-                    <p className="text-xl md:text-2xl text-gray-600 font-medium leading-relaxed">
+                    <h1 className="text-5xl md:text-7xl font-black mb-6 tracking-tighter">WHAT WE <span className="text-primary italic">BRING</span></h1>
+                    <p className="text-lg md:text-xl text-gray-600 font-medium leading-relaxed">
                         A comprehensive suite of services designed for the modern music ecosystem. We handle the business so you can celebrate the culture.
                     </p>
                 </div>
@@ -57,12 +57,12 @@ const Services = () => {
                             <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mb-8 group-hover:bg-primary group-hover:text-white transition-colors">
                                 {service.icon}
                             </div>
-                            <h3 className="text-3xl md:text-4xl font-black mb-4 tracking-tight">{service.title}</h3>
-                            <p className="text-base md:text-lg text-gray-600 mb-8 font-medium leading-relaxed">{service.desc}</p>
+                            <h3 className="text-2xl md:text-3xl font-black mb-4 tracking-tight">{service.title}</h3>
+                            <p className="text-sm md:text-base text-gray-600 mb-8 font-medium leading-relaxed">{service.desc}</p>
 
                             <div className="space-y-4 mb-10">
                                 {service.features.map((feat, i) => (
-                                    <div key={i} className="flex items-center text-xs md:text-base font-bold text-accent/70 uppercase tracking-widest">
+                                    <div key={i} className="flex items-center text-xs md:text-sm font-bold text-accent/70 uppercase tracking-widest">
                                         <span className="w-2 h-2 bg-primary rounded-full mr-3" />
                                         {feat}
                                     </div>
