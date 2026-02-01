@@ -19,7 +19,7 @@ const About = () => {
                     <motion.h1
                         initial={{ y: 20, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
-                        className="text-6xl md:text-8xl font-black mb-10"
+                        className="text-6xl md:text-8xl font-black mb-10 tracking-tighter"
                     >
                         OUR <span className="text-primary italic">STORY</span>
                     </motion.h1>
@@ -27,9 +27,9 @@ const About = () => {
                         <p className="text-xl md:text-2xl text-gray-400 leading-relaxed font-medium">
                             LVRN (Live Right Now) Experience is more than just a brand; it's a movement. Born from the energy of nightlife and the passion for creative expression, we're here to redefine what music and events mean to the youth.
                         </p>
-                        <div className="bg-primary/10 p-10 rounded-3xl border border-primary/20">
+                        <div className="bg-primary/10 p-10 md:p-12 rounded-[2.5rem] border border-primary/20">
                             <h3 className="text-3xl font-bold mb-4 text-primary italic">Our Mission</h3>
-                            <p className="text-lg text-gray-300">
+                            <p className="text-lg md:text-xl text-gray-300 leading-relaxed font-medium">
                                 To create immersive experiences that celebrate authenticity, diversity, and the raw energy of live music. We empower artists and connect fans in ways never seen before.
                             </p>
                         </div>
@@ -40,7 +40,7 @@ const About = () => {
             {/* Timeline */}
             <section className="py-24 bg-white">
                 <div className="container mx-auto px-6">
-                    <h2 className="text-4xl font-black mb-16 text-center">THE JOURNEY</h2>
+                    <h2 className="text-5xl md:text-6xl font-black mb-16 text-center tracking-tighter">THE JOURNEY</h2>
                     <div className="max-w-4xl mx-auto space-y-12">
                         {milestones.map((item, idx) => (
                             <motion.div
@@ -50,12 +50,12 @@ const About = () => {
                                 viewport={{ once: true }}
                                 className={`flex flex-col md:flex-row items-center gap-8 ${idx % 2 !== 0 ? 'md:flex-row-reverse' : ''}`}
                             >
-                                <div className="w-32 h-32 flex-shrink-0 bg-primary rounded-full flex items-center justify-center text-white text-2xl font-black shadow-xl ring-8 ring-primary/10">
+                                <div className="w-36 h-36 flex-shrink-0 bg-primary rounded-full flex items-center justify-center text-white text-3xl font-black shadow-xl ring-8 ring-primary/10">
                                     {item.year}
                                 </div>
-                                <div className={`p-8 bg-lightGray rounded-2xl flex-grow border-l-4 border-primary ${idx % 2 !== 0 ? 'text-right md:border-l-0 md:border-r-4' : ''}`}>
-                                    <h3 className="text-2xl font-bold mb-2">{item.title}</h3>
-                                    <p className="text-gray-600">{item.desc}</p>
+                                <div className={`p-10 bg-lightGray rounded-[2rem] flex-grow border-l-8 border-primary ${idx % 2 !== 0 ? 'text-right md:border-l-0 md:border-r-8' : ''}`}>
+                                    <h3 className="text-3xl font-bold mb-3">{item.title}</h3>
+                                    <p className="text-xl text-gray-600 font-medium leading-relaxed">{item.desc}</p>
                                 </div>
                             </motion.div>
                         ))}

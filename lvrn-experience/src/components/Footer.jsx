@@ -9,8 +9,8 @@ const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
                     <div className="col-span-1 md:col-span-2">
                         <Link to="/" className="flex items-center space-x-2 mb-6">
-                            <img src={logo} alt="LVRN Experience" className="h-10 w-auto rounded" />
-                            <span className="text-2xl font-black text-white">LVRN <span className="text-primary">EXPERIENCE</span></span>
+                            <img src={logo} alt="LVRN Experience" className="h-12 w-auto rounded" />
+                            <span className="text-3xl font-black text-white">LVRN <span className="text-primary">EXPERIENCE</span></span>
                         </Link>
                         <p className="text-gray-400 max-w-sm mb-6 font-medium">
                             Creating unforgettable music and event experiences for the youth culture. From artist management to live shows, we are the pulse of nightlife.
@@ -24,8 +24,8 @@ const Footer = () => {
                     </div>
 
                     <div>
-                        <h4 className="text-lg font-bold mb-6 underline decoration-primary decoration-2 underline-offset-8">Quick Links</h4>
-                        <ul className="space-y-4 text-gray-400 font-medium">
+                        <h4 className="text-xl font-bold mb-6 underline decoration-primary decoration-4 underline-offset-8">Quick Links</h4>
+                        <ul className="space-y-4 text-gray-400 font-bold text-lg">
                             <li><Link to="/about" className="hover:text-primary transition-colors">About Us</Link></li>
                             <li><Link to="/services" className="hover:text-primary transition-colors">Our Services</Link></li>
                             <li><Link to="/events" className="hover:text-primary transition-colors">Upcoming Events</Link></li>
@@ -34,8 +34,8 @@ const Footer = () => {
                     </div>
 
                     <div>
-                        <h4 className="text-lg font-bold mb-6 underline decoration-primary decoration-2 underline-offset-8">Stay Updated</h4>
-                        <p className="text-gray-400 mb-4 font-medium">Subscribe for exclusive updates.</p>
+                        <h4 className="text-xl font-bold mb-6 underline decoration-primary decoration-4 underline-offset-8">Stay Updated</h4>
+                        <p className="text-gray-400 mb-4 font-bold text-lg">Subscribe for exclusive updates.</p>
                         <form className="flex">
                             <input
                                 type="email"

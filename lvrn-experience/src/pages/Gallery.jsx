@@ -1,13 +1,19 @@
 import { motion } from 'framer-motion';
+import photo1 from '../assets/event_photo_1.jpg';
+import photo2 from '../assets/event_photo_2.jpg';
+import photo3 from '../assets/event_photo_3.jpg';
+import g_photo1 from '../assets/gallery_photo_1.jpg';
+import g_photo4 from '../assets/gallery_photo_4.jpg';
+import g_photo5 from '../assets/gallery_photo_5.jpg';
 
 const Gallery = () => {
     const photos = [
-        { id: 1, url: 'https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&q=80&w=800', size: 'large', event: 'Summer Bash' },
-        { id: 2, url: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&q=80&w=800', size: 'small', event: 'Midnight Sessions' },
-        { id: 3, url: 'https://images.unsplash.com/photo-1459749411177-042180ce673c?auto=format&fit=crop&q=80&w=800', size: 'medium', event: 'Summer Bash' },
-        { id: 4, url: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&q=80&w=800', size: 'large', event: 'Neon Nights' },
-        { id: 5, url: 'https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&q=80&w=800', size: 'small', event: 'Midnight Sessions' },
-        { id: 6, url: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80&w=800', size: 'medium', event: 'Neon Nights' },
+        { id: 1, url: g_photo4, size: 'large', event: 'Artist Focus' },
+        { id: 2, url: photo3, size: 'small', event: 'Deep Resonance' },
+        { id: 3, url: photo1, size: 'medium', event: 'Arctic Rhythm' },
+        { id: 4, url: g_photo5, size: 'small', event: 'Event Highlights' },
+        { id: 5, url: photo2, size: 'medium', event: 'Cultural Spectrum' },
+        { id: 6, url: g_photo1, size: 'large', event: 'Live Performance' },
     ];
 
     return (
@@ -25,7 +31,7 @@ const Gallery = () => {
                     </p>
                 </div>
 
-                <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
+                <div className="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
                     {photos.map((photo, idx) => (
                         <motion.div
                             key={photo.id}
@@ -33,7 +39,7 @@ const Gallery = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: idx * 0.1 }}
-                            className="relative group cursor-pointer overflow-hidden rounded-3xl"
+                            className="relative group cursor-pointer overflow-hidden rounded-3xl break-inside-avoid mb-6"
                         >
                             <img
                                 src={photo.url}

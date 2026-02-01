@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiCalendar, FiMapPin, FiClock } from 'react-icons/fi';
+import holiCrowd from '../assets/holi_crowd.png';
+import juggySandhu from '../assets/juggy_sandhu_real.jpg';
 
 const Events = () => {
     const [filter, setFilter] = useState('upcoming');
@@ -9,20 +11,20 @@ const Events = () => {
         {
             id: 1,
             name: 'Upcoming Winter Concert',
-            date: '14th March, 2026',
+            date: 'Coming Soon',
             time: '',
-            location: 'To be Announced',
+            location: 'Kora Kendra Ground No. 4, Borivali (W)',
             type: 'upcoming',
             image: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&q=80&w=800'
         },
         {
             id: 2,
-            name: 'Holi Bash',
+            name: 'Holi Bash 2K26',
             date: '4th March, 2026',
-            time: '',
-            location: 'To be announced',
+            time: '10:00 AM onwards',
+            location: 'Pushpanjali Gardens, Borivali',
             type: 'upcoming',
-            image: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&q=80&w=800'
+            image: juggySandhu
         },
         {
             id: 3,
@@ -86,7 +88,7 @@ const Events = () => {
                                     className="group bg-white/5 rounded-3xl overflow-hidden hover:bg-white/10 transition-colors border border-white/10"
                                 >
                                     <div className="relative h-64 overflow-hidden">
-                                        <img src={event.image} alt={event.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                                        <img src={event.image} alt={event.name} className="w-full h-full object-cover object-[center_15%] group-hover:scale-110 transition-transform duration-700" />
                                         <div className="absolute top-4 right-4 bg-primary text-white font-black px-4 py-2 rounded-xl text-sm italic">
                                             {event.type.toUpperCase()}
                                         </div>

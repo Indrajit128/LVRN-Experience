@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { HiMenuAlt3, HiX } from 'react-icons/hi';
+import { motion } from 'framer-motion';
 import logo from '../assets/logo 4.jpeg';
 
 const Navbar = () => {
@@ -17,24 +18,34 @@ const Navbar = () => {
     ];
 
     return (
-        <nav className="fixed w-full z-50 bg-white py-4">
-            <div className="container mx-auto px-6 flex justify-between items-center">
+        <nav className="fixed w-full z-50 bg-white shadow-sm py-2 transition-all duration-300">
+            <div className="w-full px-8 flex justify-between items-center">
                 <Link to="/" className="flex items-center">
-                    <img src={logo} alt="LVRN Experience" className="h-10 md:h-14 w-auto rounded px-2" />
+                    <motion.img
+                        whileHover={{ scale: 1.05 }}
+                        transition={{ duration: 0.3 }}
+                        src={logo}
+                        alt="LVRN Experience"
+                        className="h-[150px] w-auto rounded object-contain"
+                    />
                 </Link>
 
                 {/* Desktop Menu */}
-                <div className="hidden md:flex space-x-8 items-center">
+                <div className="hidden md:flex space-x-12 items-center">
                     {navLinks.map((link) => (
                         <Link
                             key={link.name}
                             to={link.path}
-                            className={`font-bold px-4 py-2 ${link.name === 'Home' ? 'text-black' : 'text-gray-800'} ${location.pathname === link.path ? 'text-primary' : ''}`}
+                            className={`text-2xl font-black px-2 py-1 transition-colors uppercase tracking-tight ${link.name === 'Home' ? 'text-black' : 'text-gray-800'} ${location.pathname === link.path ? 'text-primary' : ''} hover:text-primary`}
                         >
                             {link.name}
                         </Link>
                     ))}
+<<<<<<< HEAD
                     <Link to="/events" className="bg-primary text-white px-6 py-2 rounded-full font-bold">
+=======
+                    <Link to="/events" className="bg-primary text-white px-8 py-3 rounded-xl font-black text-xl hover:scale-105 transition-transform uppercase tracking-wider shadow-lg">
+>>>>>>> 63d6ea1 (Refine typography, gallery details, and event CTA; revert contact form to React)
                         Know More
                     </Link>
                 </div>

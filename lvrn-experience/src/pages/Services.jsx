@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion';
 import { FiMusic, FiCalendar, FiUsers } from 'react-icons/fi';
+import logo from '../assets/logo-transparent.png';
+
 
 const Services = () => {
     const services = [
@@ -35,8 +37,8 @@ const Services = () => {
         >
             <section className="py-20 container mx-auto px-6">
                 <div className="max-w-3xl mb-16">
-                    <h1 className="text-5xl md:text-7xl font-black mb-6">WHAT WE <span className="text-primary italic">BRING</span></h1>
-                    <p className="text-xl text-gray-600 font-medium">
+                    <h1 className="text-6xl md:text-8xl font-black mb-6 tracking-tighter">WHAT WE <span className="text-primary italic">BRING</span></h1>
+                    <p className="text-xl md:text-2xl text-gray-600 font-medium leading-relaxed">
                         A comprehensive suite of services designed for the modern music ecosystem. We handle the business so you can celebrate the culture.
                     </p>
                 </div>
@@ -55,12 +57,12 @@ const Services = () => {
                             <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mb-8 group-hover:bg-primary group-hover:text-white transition-colors">
                                 {service.icon}
                             </div>
-                            <h3 className="text-3xl font-black mb-4">{service.title}</h3>
-                            <p className="text-gray-600 mb-8 font-medium leading-relaxed">{service.desc}</p>
+                            <h3 className="text-3xl md:text-4xl font-black mb-4 tracking-tight">{service.title}</h3>
+                            <p className="text-base md:text-lg text-gray-600 mb-8 font-medium leading-relaxed">{service.desc}</p>
 
                             <div className="space-y-4 mb-10">
                                 {service.features.map((feat, i) => (
-                                    <div key={i} className="flex items-center text-sm font-bold text-accent/70 uppercase tracking-wider">
+                                    <div key={i} className="flex items-center text-xs md:text-base font-bold text-accent/70 uppercase tracking-widest">
                                         <span className="w-2 h-2 bg-primary rounded-full mr-3" />
                                         {feat}
                                     </div>
@@ -69,7 +71,7 @@ const Services = () => {
 
                             <motion.button
                                 whileTap={{ scale: 0.95 }}
-                                className="w-full py-4 bg-accent text-white rounded-xl font-bold hover:bg-primary transition-colors uppercase tracking-widest text-xs"
+                                className="w-full py-5 bg-accent text-white rounded-xl font-bold hover:bg-primary transition-all uppercase tracking-widest text-sm"
                             >
                                 Inquire Now
                             </motion.button>
@@ -93,17 +95,40 @@ const Services = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="relative">
+                    <div className="flex items-center justify-center relative">
+                        {/* Glow effect background */}
                         <motion.div
-                            animate={{ rotate: 360 }}
-                            transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                            className="w-64 h-64 md:w-96 md:h-96 border-4 border-dashed border-primary/20 rounded-full flex items-center justify-center mx-auto"
-                        >
-                            <div className="w-32 h-32 md:w-48 md:h-48 bg-primary rounded-full blur-3xl opacity-50 animate-pulse" />
-                        </motion.div>
-                        <div className="absolute inset-0 flex items-center justify-center">
-                            <span className="text-8xl font-black text-primary italic opacity-20">LVRN</span>
-                        </div>
+                            className="absolute w-64 h-64 bg-primary/20 rounded-full blur-[80px]"
+                            animate={{
+                                scale: [1, 1.2, 1],
+                                opacity: [0.3, 0.6, 0.3],
+                            }}
+                            transition={{
+                                duration: 4,
+                                repeat: Infinity,
+                                ease: "easeInOut",
+                            }}
+                        />
+                        <motion.img
+                            src={logo}
+                            alt="LVRN Logo"
+                            className="w-64 h-auto md:w-96 object-contain relative z-10"
+                            animate={{
+                                y: [0, -30, 0],
+                                rotate: [0, 5, -5, 0],
+                                scale: [1, 1.05, 1],
+                            }}
+                            whileHover={{
+                                scale: 1.15,
+                                rotate: 0,
+                                filter: "drop-shadow(0 0 20px rgba(255, 19, 92, 0.5))"
+                            }}
+                            transition={{
+                                duration: 6,
+                                repeat: Infinity,
+                                ease: "easeInOut"
+                            }}
+                        />
                     </div>
                 </div>
             </section>
