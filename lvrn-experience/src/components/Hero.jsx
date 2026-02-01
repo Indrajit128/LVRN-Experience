@@ -41,9 +41,6 @@ const Hero = () => {
                     transition={{ duration: 0.8, ease: "easeOut" }}
                     className="mb-8"
                 >
-                    <div className="mb-6 text-white text-xl md:text-2xl font-bold tracking-[0.5em] uppercase opacity-80 md:text-white text-gray-800">
-                        LVRN Experience
-                    </div>
                     <div className="mb-8 flex justify-center">
                         <TrueFocus
                             sentence="CREATING ICONIC MOMENTS"
