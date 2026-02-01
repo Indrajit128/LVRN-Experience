@@ -26,7 +26,7 @@ const Navbar = () => {
                         transition={{ duration: 0.3 }}
                         src={logo}
                         alt="LVRN Experience"
-                        className="h-[150px] w-auto rounded object-contain"
+                        className="h-[80px] w-auto rounded object-contain"
                     />
                 </Link>
 
@@ -36,12 +36,12 @@ const Navbar = () => {
                         <Link
                             key={link.name}
                             to={link.path}
-                            className={`text-2xl font-black px-2 py-1 transition-colors uppercase tracking-tight ${link.name === 'Home' ? 'text-black' : 'text-gray-800'} ${location.pathname === link.path ? 'text-primary' : ''} hover:text-primary`}
+                            className={`text-xl font-black px-2 py-1 transition-colors uppercase tracking-tight ${link.name === 'Home' ? 'text-black' : 'text-gray-800'} ${location.pathname === link.path ? 'text-primary' : ''} hover:text-primary`}
                         >
                             {link.name}
                         </Link>
                     ))}
-                    <Link to="/events" className="bg-primary text-white px-8 py-3 rounded-xl font-black text-xl hover:scale-105 transition-transform uppercase tracking-wider shadow-lg">
+                    <Link to="/events" className="bg-primary text-white px-6 py-2 rounded-xl font-black text-lg hover:scale-105 transition-transform uppercase tracking-wider shadow-lg">
                         Know More
                     </Link>
                 </div>
