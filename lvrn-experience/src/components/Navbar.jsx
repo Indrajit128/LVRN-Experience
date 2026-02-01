@@ -36,12 +36,12 @@ const Navbar = () => {
                         <Link
                             key={link.name}
                             to={link.path}
-                            className={`text-xl font-black px-2 py-1 transition-colors uppercase tracking-tight ${link.name === 'Home' ? 'text-black' : 'text-gray-800'} ${location.pathname === link.path ? 'text-primary' : ''} hover:text-primary`}
+                            className={`text-lg font-black px-2 py-1 transition-colors uppercase tracking-tight ${link.name === 'Home' ? 'text-black' : 'text-gray-800'} ${location.pathname === link.path ? 'text-primary' : ''} hover:text-primary`}
                         >
                             {link.name}
                         </Link>
                     ))}
-                    <Link to="/events" className="bg-primary text-white px-6 py-2 rounded-xl font-black text-lg hover:scale-105 transition-transform uppercase tracking-wider shadow-lg">
+                    <Link to="/events" className="bg-primary text-white px-5 py-2 rounded-xl font-black text-base hover:scale-105 transition-transform uppercase tracking-wider shadow-lg">
                         Know More
                     </Link>
                 </div>
@@ -59,12 +59,12 @@ const Navbar = () => {
                         key={link.name}
                         to={link.path}
                         onClick={() => setIsOpen(false)}
-                        className={`text-3xl font-black px-4 py-2 ${link.name === 'Home' ? 'text-black' : 'text-gray-800'} ${location.pathname === link.path ? 'text-primary' : ''}`}
+                        className={`text-2xl font-black px-4 py-2 ${link.name === 'Home' ? 'text-black' : 'text-gray-800'} ${location.pathname === link.path ? 'text-primary' : ''}`}
                     >
                         {link.name}
                     </Link>
                 ))}
-                <Link to="/events" onClick={() => setIsOpen(false)} className="bg-primary text-white px-8 py-3 rounded-full font-bold text-xl">
+                <Link to="/events" onClick={() => setIsOpen(false)} className="bg-primary text-white px-6 py-2 rounded-full font-bold text-lg">
                     Know More
                 </Link>
             </div>
