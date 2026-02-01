@@ -82,7 +82,7 @@ const Home = () => {
                             </motion.div>
                         </div>
 
-                        <div className="lg:w-1/2 grid grid-cols-2 gap-6">
+                        <div className="lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-6">
                             <motion.div
                                 initial={{ opacity: 0, y: 50 }}
                                 whileInView={{ opacity: 1, y: 0 }}
@@ -90,7 +90,7 @@ const Home = () => {
                                 transition={{ delay: 0.2 }}
                                 className="col-span-2 overflow-hidden rounded-[3rem] shadow-2xl group"
                             >
-                                <img src={holiCrowd} alt="Holi Crowd" className="w-full h-[400px] object-cover group-hover:scale-110 transition-transform duration-700" />
+                                <img src={holiCrowd} alt="Holi Crowd" className="w-full h-[250px] md:h-[400px] object-cover group-hover:scale-110 transition-transform duration-700" />
                             </motion.div>
                             <motion.div
                                 initial={{ opacity: 0, scale: 0.8 }}
@@ -102,7 +102,7 @@ const Home = () => {
                                 <img
                                     src={juggySandhu}
                                     alt="Juggy Sandhu"
-                                    className="w-full h-[280px] object-cover object-center group-hover:scale-105 transition-transform duration-700 contrast-[1.25] brightness-[1.1] saturate-[1.2]"
+                                    className="w-full h-[200px] md:h-[280px] object-cover object-center group-hover:scale-105 transition-transform duration-700 contrast-[1.25] brightness-[1.1] saturate-[1.2]"
                                     style={{
                                         imageRendering: '-webkit-optimize-contrast',
                                         WebkitBackdropFilter: 'blur(0px)' // Force GPU acceleration for clearer edges
