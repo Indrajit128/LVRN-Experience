@@ -41,11 +41,7 @@ const Navbar = () => {
                             {link.name}
                         </Link>
                     ))}
-<<<<<<< HEAD
-                    <Link to="/events" className="bg-primary text-white px-6 py-2 rounded-full font-bold">
-=======
                     <Link to="/events" className="bg-primary text-white px-8 py-3 rounded-xl font-black text-xl hover:scale-105 transition-transform uppercase tracking-wider shadow-lg">
->>>>>>> 63d6ea1 (Refine typography, gallery details, and event CTA; revert contact form to React)
                         Know More
                     </Link>
                 </div>
