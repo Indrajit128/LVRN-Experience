@@ -77,7 +77,7 @@ const Contact = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-[0.8fr_1.2fr] gap-8 md:gap-16 items-start">
                     {/* Contact Info */}
                     <div>
-                        <h1 className="text-5xl md:text-7xl lg:text-8xl font-black mb-6 md:mb-10 italic uppercase tracking-tighter">GET IN <span className="text-primary pt-2">TOUCH</span></h1>
+                        <h1 className="text-4xl md:text-7xl lg:text-8xl font-black mb-6 md:mb-10 italic uppercase tracking-tighter">GET IN <span className="text-primary pt-2">TOUCH</span></h1>
                         <p className="text-lg md:text-2xl text-gray-600 mb-8 md:mb-12 font-medium leading-relaxed">
                             Have a project in mind? Want to book an artist or collaborate on an event? Our team is ready to bring the energy.
                         </p>
@@ -89,7 +89,7 @@ const Contact = () => {
                                 </div>
                                 <div className="ml-6">
                                     <p className="text-xs md:text-sm font-black text-gray-400 uppercase tracking-widest">Email Us</p>
-                                    <p className="text-xl md:text-2xl font-bold">info@lvrnexperience.com</p>
+                                    <p className="text-lg md:text-xl font-bold">info@lvrnexperience.com</p>
                                 </div>
                             </a>
 
@@ -99,7 +99,7 @@ const Contact = () => {
                                 </div>
                                 <div className="ml-6">
                                     <p className="text-xs md:text-sm font-black text-gray-400 uppercase tracking-widest">Follow Us</p>
-                                    <p className="text-xl md:text-2xl font-bold">lvrn.experience</p>
+                                    <p className="text-lg md:text-xl font-bold">lvrn.experience</p>
                                 </div>
                             </a>
 
@@ -109,7 +109,7 @@ const Contact = () => {
                                 </div>
                                 <div className="ml-6">
                                     <p className="text-xs md:text-sm font-black text-gray-400 uppercase tracking-widest">Call Us</p>
-                                    <p className="text-xl md:text-2xl font-bold">+91-961-999-4477</p>
+                                    <p className="text-lg md:text-xl font-bold">+91-961-999-4477</p>
                                     <p className="text-sm md:text-base font-bold text-gray-500">4466 / 7733 / 8833</p>
                                 </div>
                             </a>
@@ -142,7 +142,7 @@ const Contact = () => {
 
                             <div className="space-y-2">
                                 <label className="text-xs font-black uppercase tracking-widest text-gray-400 ml-1">Subject</label>
-                                <select name="subject" value={formData.subject} onChange={handleChange} className="w-full bg-lightGray border-none px-6 py-4 rounded-2xl focus:ring-2 focus:ring-primary outline-none transition-all font-bold appearance-none text-lg">
+                                <select name="subject" value={formData.subject} onChange={handleChange} className="w-full bg-lightGray border-none px-6 py-4 rounded-2xl focus:ring-2 focus:ring-primary outline-none transition-all font-bold appearance-none text-base">
                                     <option>Artist Management</option>
                                     <option>Event Inquiry</option>
                                     <option>Partnership</option>
@@ -152,7 +152,7 @@ const Contact = () => {
 
                             <div className="space-y-2">
                                 <label className="text-xs font-black uppercase tracking-widest text-gray-400 ml-1">Message</label>
-                                <textarea name="message" value={formData.message} onChange={handleChange} rows="5" placeholder="Tell us about your vision..." className="w-full bg-lightGray border-none px-6 py-4 rounded-2xl focus:ring-2 focus:ring-primary outline-none transition-all font-bold resize-none text-lg"></textarea>
+                                <textarea name="message" value={formData.message} onChange={handleChange} rows="5" placeholder="Tell us about your vision..." className="w-full bg-lightGray border-none px-6 py-4 rounded-2xl focus:ring-2 focus:ring-primary outline-none transition-all font-bold resize-none text-base"></textarea>
                             </div>
 
                             {submitMessage && (
