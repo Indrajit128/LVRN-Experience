@@ -10,15 +10,6 @@ const Events = () => {
     const events = [
         {
             id: 1,
-            name: 'Upcoming Winter Concert',
-            date: 'Coming Soon',
-            time: '',
-            location: 'Kora Kendra Ground No. 4, Borivali (W)',
-            type: 'upcoming',
-            image: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&q=80&w=800'
-        },
-        {
-            id: 2,
             name: 'Holi Bash 2K26',
             date: '4th March, 2026',
             time: '10:00 AM onwards',
@@ -27,13 +18,22 @@ const Events = () => {
             image: juggySandhu
         },
         {
-            id: 3,
+            id: 2,
             name: 'Gujarati Music Event',
             date: 'Coming Soon',
             time: '',
             location: 'To be announced',
             type: 'upcoming',
             image: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80&w=800'
+        },
+        {
+            id: 3,
+            name: 'Upcoming Winter Concert',
+            date: 'Coming Soon',
+            time: '',
+            location: 'Kora Kendra Ground No. 4, Borivali (W)',
+            type: 'upcoming',
+            image: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&q=80&w=800'
         },
         {
             id: 4,
