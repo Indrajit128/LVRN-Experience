@@ -1,6 +1,7 @@
+import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { FaInstagram, FaTwitter, FaFacebook, FaYoutube } from 'react-icons/fa';
-import logo from '../assets/logo 4.jpeg';
+import { FaInstagram } from 'react-icons/fa';
+import logo from '../assets/logo.png';
 
 const Footer = () => {
     return (
@@ -9,7 +10,6 @@ const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
                     <div className="col-span-1 md:col-span-2">
                         <Link to="/" className="flex items-center space-x-2 mb-6">
-                            <img src={logo} alt="LVRN Experience" className="h-12 w-auto rounded" />
                             <span className="text-3xl font-black text-white">LVRN <span className="text-primary">EXPERIENCE</span></span>
                         </Link>
                         <p className="text-gray-400 max-w-sm mb-6 font-medium">
