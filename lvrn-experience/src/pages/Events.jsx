@@ -33,6 +33,14 @@ const Events = () => {
                     {
                         name: 'DJ Dastan',
                         role: 'High-Energy Bollywood & EDM Set'
+                    },
+                    {
+                        name: 'Shumayl Malik',
+                        role: 'Live Performance Experience'
+                    },
+                    {
+                        name: 'DJ Mannat',
+                        role: 'High-Energy Bollywood & EDM Set'
                     }
                 ],
                 experience: [
