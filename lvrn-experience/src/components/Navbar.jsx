@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { HiMenuAlt3, HiX } from 'react-icons/hi';
-import { motion } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import logo from '../assets/logo 4.jpeg';
 
 const Navbar = () => {
@@ -53,21 +53,49 @@ const Navbar = () => {
             </div>
 
             {/* Mobile Menu */}
-            <div className={`${isOpen ? 'block' : 'hidden'} fixed inset-0 bg-white z-40 flex flex-col items-center justify-center space-y-8 md:hidden`}>
-                {navLinks.map((link) => (
-                    <Link
-                        key={link.name}
-                        to={link.path}
-                        onClick={() => setIsOpen(false)}
-                        className={`text-2xl font-black px-4 py-2 ${link.name === 'Home' ? 'text-black' : 'text-gray-800'} ${location.pathname === link.path ? 'text-primary' : ''}`}
+            {/* Mobile Menu */}
+            <AnimatePresence>
+                {isOpen && (
+                    <motion.div
+                        initial={{ opacity: 0, y: -20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -20 }}
+                        transition={{ duration: 0.3 }}
+                        className="fixed inset-0 bg-white/95 backdrop-blur-xl z-40 flex flex-col items-center justify-center space-y-8 md:hidden"
                     >
-                        {link.name}
-                    </Link>
-                ))}
-                <Link to="/events" onClick={() => setIsOpen(false)} className="bg-primary text-white px-6 py-2 rounded-full font-bold text-lg">
-                    Know More
-                </Link>
-            </div>
+                        {navLinks.map((link, i) => (
+                            <motion.div
+                                key={link.name}
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 0.1 + i * 0.1 }}
+                            >
+                                <Link
+                                    to={link.path}
+                                    onClick={() => setIsOpen(false)}
+                                    className={`text-3xl font-black px-4 py-2 uppercase tracking-tight hover:scale-110 transition-transform block ${link.name === 'Home' ? 'text-black' : 'text-gray-800'
+                                        } ${location.pathname === link.path ? 'text-primary' : ''}`}
+                                >
+                                    {link.name}
+                                </Link>
+                            </motion.div>
+                        ))}
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.5 }}
+                        >
+                            <Link
+                                to="/events"
+                                onClick={() => setIsOpen(false)}
+                                className="bg-primary text-white px-8 py-3 rounded-2xl font-black text-xl hover:scale-105 transition-transform uppercase tracking-wider shadow-xl inline-block"
+                            >
+                                Know More
+                            </Link>
+                        </motion.div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
         </nav>
     );
 };
