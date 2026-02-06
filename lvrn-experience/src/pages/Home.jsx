@@ -3,10 +3,11 @@ import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiMapPin, FiClock, FiX, FiMusic, FiStar } from 'react-icons/fi';
 import Hero from '../components/Hero';
-import holiCrowd from '../assets/holi_crowd.png';
-import juggySandhu from '../assets/juggy_sandhu_new.jpg';
-import djDastanPoster from '../assets/dj_dastan_new.jpg';
+import juggySandhu from '../assets/juggy sandhu post 3.png';
+import rangoverPoster from '../assets/Rangover poster.jpeg';
+import djDastanPoster from '../assets/dj daastan.png';
 import djMannat from '../assets/dj mannat.png';
+import djSunny from '../assets/dj sunny.png';
 import lvrnPost from '../assets/lvrn post.png';
 
 const Home = () => {
@@ -86,7 +87,8 @@ const Home = () => {
                                             'Juggy Sandhu',
                                             'DJ Dastan',
                                             'Shumayl Malik',
-                                            'DJ Mannat'
+                                            'DJ Mannat',
+                                            'DJ Sunny'
                                         ].map((artist, i) => (
                                             <div key={i} className="flex items-center space-x-3 group">
                                                 <span className="w-1.5 h-1.5 bg-primary rounded-full group-hover:scale-150 transition-transform duration-300" />
@@ -119,18 +121,19 @@ const Home = () => {
                             </motion.div>
                         </div>
 
-                        <div className="lg:w-1/2 grid grid-cols-1 md:grid-cols-3 gap-4">
+
+                        <div className="lg:w-1/2 grid grid-cols-1 md:grid-cols-4 gap-4">
                             <motion.div
                                 initial={{ opacity: 0, y: 20 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.2 }}
-                                className="md:col-span-2 overflow-hidden rounded-[2rem] shadow-2xl group border border-white/5 bg-accent h-[280px]"
+                                className="md:col-span-3 overflow-hidden rounded-[2rem] shadow-2xl group border border-white/5 bg-accent h-[280px]"
                             >
                                 <img
-                                    src={holiCrowd}
+                                    src={rangoverPoster}
                                     alt="Rangover Holi Celebration"
-                                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 contrast-[1.1] brightness-[1.1]"
+                                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700 contrast-[1.1] brightness-[1.1]"
                                     style={{
                                         imageRendering: '-webkit-optimize-contrast',
                                     }}
@@ -156,7 +159,7 @@ const Home = () => {
                                 <img
                                     src={djDastanPoster}
                                     alt="DJ Dastan"
-                                    className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-700"
+                                    className="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-700"
                                 />
                             </motion.div>
                             <motion.div
@@ -169,7 +172,7 @@ const Home = () => {
                                 <img
                                     src={lvrnPost}
                                     alt="Shumayl Malik"
-                                    className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-700"
+                                    className="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-700"
                                 />
                             </motion.div>
                             <motion.div
@@ -179,7 +182,16 @@ const Home = () => {
                                 transition={{ delay: 0.6 }}
                                 className="overflow-hidden rounded-[2rem] shadow-2xl group h-[280px]"
                             >
-                                <img src={djMannat} alt="DJ Mannat" className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-700" />
+                                <img src={djMannat} alt="DJ Mannat" className="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-700" />
+                            </motion.div>
+                            <motion.div
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: 0.7 }}
+                                className="overflow-hidden rounded-[2rem] shadow-2xl group h-[280px]"
+                            >
+                                <img src={djSunny} alt="DJ Sunny" className="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-700" />
                             </motion.div>
                         </div>
                     </div>
@@ -258,6 +270,10 @@ const Home = () => {
                                                 <p className="text-xl md:text-2xl font-black mb-2 text-primary">DJ Mannat</p>
                                                 <p className="text-gray-400 font-medium">High-Energy Bollywood & EDM Set</p>
                                             </div>
+                                            <div className="bg-white/5 p-6 rounded-2xl border border-white/10 hover:bg-white/10 transition-all">
+                                                <p className="text-xl md:text-2xl font-black mb-2 text-primary">DJ Sunny</p>
+                                                <p className="text-gray-400 font-medium">High-Energy Bollywood & EDM Set</p>
+                                            </div>
                                         </div>
                                     </motion.div>
 
@@ -296,22 +312,7 @@ const Home = () => {
                                     </motion.div>
 
                                     {/* Lineup Update */}
-                                    <motion.div
-                                        initial={{ opacity: 0, y: 20 }}
-                                        animate={{ opacity: 1, y: 0 }}
-                                        transition={{ delay: 0.5 }}
-                                        className="mb-12"
-                                    >
-                                        <div className="flex items-center mb-4">
-                                            <FiMusic className="text-primary text-2xl mr-3" />
-                                            <h3 className="text-2xl md:text-3xl font-black uppercase tracking-wide">Lineup Update</h3>
-                                        </div>
-                                        <div className="pl-0 md:pl-11">
-                                            <p className="text-base md:text-lg text-gray-400 font-bold italic">
-                                                More Artist Lineups To Be Announced Soon…
-                                            </p>
-                                        </div>
-                                    </motion.div>
+
 
                                     {/* Event Experience */}
                                     <motion.div

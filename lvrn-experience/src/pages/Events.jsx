@@ -1,9 +1,8 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiCalendar, FiMapPin, FiClock } from 'react-icons/fi';
-import holiCrowd from '../assets/holi_crowd.png';
 import juggySandhu from '../assets/juggy_sandhu_new.jpg';
-import rangoverPoster from '../assets/Rangoverposter.png';
+import rangoverPoster from '../assets/Rangover poster.jpeg';
 
 const Events = () => {
     const [filter, setFilter] = useState('upcoming');
@@ -17,7 +16,7 @@ const Events = () => {
             time: '10:00 AM to 4:00 PM',
             location: 'Bangur Sports Complex, Goregaon West, Mumbai',
             type: 'upcoming',
-            image: holiCrowd,
+            image: rangoverPoster,
             details: {
                 fullTitle: 'RANGOVER',
                 fullVenue: {
@@ -40,6 +39,10 @@ const Events = () => {
                     },
                     {
                         name: 'DJ Mannat',
+                        role: 'High-Energy Bollywood & EDM Set'
+                    },
+                    {
+                        name: 'DJ Sunny',
                         role: 'High-Energy Bollywood & EDM Set'
                     }
                 ],
@@ -313,7 +316,7 @@ const Events = () => {
                                                         </div>
                                                     ))}
                                                 </div>
-                                                <p className="text-gray-400 font-bold mt-6 italic">More Artist Lineups To Be Announced Soon…</p>
+
                                             </div>
 
                                             {/* Event Experience */}
