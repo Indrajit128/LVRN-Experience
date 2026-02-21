@@ -3,12 +3,17 @@ import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiMapPin, FiClock, FiX, FiMusic, FiStar } from 'react-icons/fi';
 import Hero from '../components/Hero';
-import juggySandhu from '../assets/juggy sandhu post 3.png';
-import rangoverPoster from '../assets/Rangover poster.jpeg';
-import djDastanPoster from '../assets/dj daastan.png';
-import djMannat from '../assets/dj mannat.png';
-import djSunny from '../assets/dj sunny.png';
-import lvrnPost from '../assets/lvrn post.png';
+import juggySandhu from '../assets/JUGGY SANDHU NEW -4X5.jpg.jpeg';
+import rangoverPoster from '../assets/Horizontal Banner.jpg.jpeg';
+import djDastanPoster from '../assets/DJ DASTAN NEW 4X5.jpg.jpeg';
+import djMannat from '../assets/DJ mannat- 4X5.jpg.jpeg';
+import djSunny from '../assets/SUNNY & TEAM- 2.jpg.jpeg';
+import djOK from '../assets/DJ OK 3x4.jpg.jpeg';
+import lvrnLogo from '../assets/logo 4.jpeg';
+import bookMyShowLogo from '../assets/download.png';
+import districtLogo from '../assets/download.jpeg';
+import secureMySpotLogo from '../assets/download (1).jpeg';
+import grabMySpotLogo from '../assets/image.png';
 
 const Home = () => {
     const [showModal, setShowModal] = useState(false);
@@ -76,7 +81,7 @@ const Home = () => {
                                     RANG<span className="text-white italic">OVER</span>
                                 </h2>
                                 <p className="text-2xl md:text-3xl font-black mb-6 text-primary/90 italic tracking-wide">
-                                    Most Exclusive Holi Celebration
+                                    Most Exclusive Holi Celebration - 3rd March
                                 </p>
                                 <div className="mb-10 max-w-lg">
                                     <p className="text-sm md:text-base text-gray-400 font-bold mb-4 uppercase tracking-widest">
@@ -86,7 +91,7 @@ const Home = () => {
                                         {[
                                             'Juggy Sandhu',
                                             'DJ Dastan',
-                                            'Shumayl Malik',
+                                            'DJ OK',
                                             'DJ Mannat',
                                             'DJ Sunny'
                                         ].map((artist, i) => (
@@ -170,8 +175,8 @@ const Home = () => {
                                 className="overflow-hidden rounded-[2rem] shadow-2xl group border border-white/5 h-[280px]"
                             >
                                 <img
-                                    src={lvrnPost}
-                                    alt="Shumayl Malik"
+                                    src={djOK}
+                                    alt="DJ OK"
                                     className="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-700"
                                 />
                             </motion.div>
@@ -233,7 +238,11 @@ const Home = () => {
                                         initial={{ opacity: 0, y: 20 }}
                                         animate={{ opacity: 1, y: 0 }}
                                         transition={{ delay: 0.1 }}
+                                        className="text-center"
                                     >
+                                        <div className="flex justify-center mb-8">
+                                            <img src={lvrnLogo} alt="LVRN Experience" className="h-16 md:h-20 w-auto rounded-xl shadow-lg border border-white/10" />
+                                        </div>
                                         <h2 className="text-4xl md:text-6xl lg:text-7xl font-black mb-4 leading-tight uppercase tracking-tight">
                                             RANG<span className="text-primary italic">OVER</span>
                                         </h2>
@@ -263,7 +272,7 @@ const Home = () => {
                                                 <p className="text-gray-400 font-medium">High-Energy Bollywood & EDM Set</p>
                                             </div>
                                             <div className="bg-white/5 p-6 rounded-2xl border border-white/10 hover:bg-white/10 transition-all">
-                                                <p className="text-xl md:text-2xl font-black mb-2 text-primary">Shumayl Malik</p>
+                                                <p className="text-xl md:text-2xl font-black mb-2 text-primary">DJ OK</p>
                                                 <p className="text-gray-400 font-medium">Live Performance Experience</p>
                                             </div>
                                             <div className="bg-white/5 p-6 rounded-2xl border border-white/10 hover:bg-white/10 transition-all">
@@ -307,7 +316,7 @@ const Home = () => {
                                             <h3 className="text-2xl md:text-3xl font-black uppercase tracking-wide">Event Timing</h3>
                                         </div>
                                         <div className="pl-0 md:pl-11">
-                                            <p className="text-lg md:text-xl text-gray-300 font-bold">10:00 AM – 4:00 PM</p>
+                                            <p className="text-lg md:text-xl text-gray-300 font-bold">10:00 AM – 4:00 PM (8:30 AM onwards)</p>
                                         </div>
                                     </motion.div>
 
@@ -356,10 +365,19 @@ const Home = () => {
                                         transition={{ delay: 0.9 }}
                                         className="bg-white/5 p-6 md:p-8 rounded-2xl border border-primary/20"
                                     >
-                                        <p className="text-base md:text-lg text-gray-300 font-medium leading-relaxed mb-2">
+                                        <div className="mb-8">
+                                            <h4 className="text-sm font-black text-gray-500 uppercase tracking-widest mb-6 text-center">Ticketing Partners</h4>
+                                            <div className="flex flex-wrap justify-center items-center gap-6 bg-white/5 p-6 rounded-2xl border border-white/5">
+                                                <img src={bookMyShowLogo} alt="BookMyShow" className="h-10 md:h-12 w-auto object-contain hover:scale-110 transition-transform" />
+                                                <img src={districtLogo} alt="District" className="h-10 md:h-12 w-auto object-contain hover:scale-110 transition-transform" />
+                                                <img src={secureMySpotLogo} alt="SecureMySpot" className="h-10 md:h-12 w-auto object-contain hover:scale-110 transition-transform" />
+                                                <img src={grabMySpotLogo} alt="GrabMySpot" className="h-10 md:h-12 w-auto object-contain hover:scale-110 transition-transform" />
+                                            </div>
+                                        </div>
+                                        <p className="text-sm md:text-base text-gray-300 font-medium leading-relaxed mb-2 text-center">
                                             Stay tuned for more lineup reveals and ticket updates.
                                         </p>
-                                        <p className="text-base md:text-lg font-black text-primary">
+                                        <p className="text-sm md:text-base font-black text-primary text-center">
                                             Follow LVRN Experience for the latest announcements.
                                         </p>
                                     </motion.div>

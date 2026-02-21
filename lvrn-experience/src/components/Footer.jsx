@@ -2,6 +2,10 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { FaInstagram } from 'react-icons/fa';
 import logo from '../assets/logo.png';
+import bookMyShowLogo from '../assets/download.png';
+import districtLogo from '../assets/download.jpeg';
+import secureMySpotLogo from '../assets/download (1).jpeg';
+import grabMySpotLogo from '../assets/image.png';
 
 const Footer = () => {
     return (
@@ -44,6 +48,47 @@ const Footer = () => {
                             />
                             <button className="bg-primary px-4 py-2 rounded-r-md font-bold hover:bg-red-700 transition-colors text-white">Join</button>
                         </form>
+                    </div>
+                </div>
+
+                <div className="mb-16">
+                    <h4 className="text-xl font-bold mb-10 text-center uppercase tracking-[0.4em] text-gray-500">Ticketing Partners</h4>
+                    <div className="flex flex-wrap justify-center items-center gap-10 md:gap-20">
+                        {/* BookMyShow */}
+                        <div className="flex flex-col items-center">
+                            <img
+                                src={bookMyShowLogo}
+                                alt="BookMyShow"
+                                className="h-10 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-110"
+                            />
+                        </div>
+
+                        {/* District */}
+                        <div className="flex flex-col items-center">
+                            <img
+                                src={districtLogo}
+                                alt="District"
+                                className="h-10 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-110"
+                            />
+                        </div>
+
+                        {/* SecureMySpot */}
+                        <div className="flex flex-col items-center">
+                            <img
+                                src={secureMySpotLogo}
+                                alt="SecureMySpot"
+                                className="h-10 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-110"
+                            />
+                        </div>
+
+                        {/* GrabMySpot logo */}
+                        <div className="flex flex-col items-center">
+                            <img
+                                src={grabMySpotLogo}
+                                alt="GrabMySpot"
+                                className="h-12 md:h-16 w-auto object-contain transition-transform duration-300 hover:scale-110"
+                            />
+                        </div>
                     </div>
                 </div>
 

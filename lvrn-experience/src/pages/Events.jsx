@@ -1,8 +1,13 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FiCalendar, FiMapPin, FiClock } from 'react-icons/fi';
-import juggySandhu from '../assets/juggy_sandhu_new.jpg';
-import rangoverPoster from '../assets/Rangover poster.jpeg';
+import { FiCalendar, FiMapPin, FiClock, FiStar } from 'react-icons/fi';
+import juggySandhu from '../assets/JUGGY SANDHU NEW -4X5.jpg.jpeg';
+import rangoverPoster from '../assets/Horizontal Banner.jpg.jpeg';
+import lvrnLogo from '../assets/logo 4.jpeg';
+import bookMyShowLogo from '../assets/download.png';
+import districtLogo from '../assets/download.jpeg';
+import secureMySpotLogo from '../assets/download (1).jpeg';
+import grabMySpotLogo from '../assets/image.png';
 
 const Events = () => {
     const [filter, setFilter] = useState('upcoming');
@@ -12,8 +17,8 @@ const Events = () => {
         {
             id: 1,
             name: 'Rangover',
-            date: '4th March, 2026',
-            time: '10:00 AM to 4:00 PM',
+            date: '3rd March, 2026',
+            time: '8:30 AM onwards',
             location: 'Bangur Sports Complex, Goregaon West, Mumbai',
             type: 'upcoming',
             image: rangoverPoster,
@@ -34,7 +39,7 @@ const Events = () => {
                         role: 'High-Energy Bollywood & EDM Set'
                     },
                     {
-                        name: 'Shumayl Malik',
+                        name: 'DJ OK',
                         role: 'Live Performance Experience'
                     },
                     {
@@ -210,9 +215,14 @@ const Events = () => {
                             <div className="flex-grow overflow-y-auto p-8 md:p-16">
                                 <div className="max-w-3xl">
                                     {/* Event Title */}
-                                    <h2 className="text-4xl md:text-6xl font-black mb-12 leading-tight uppercase tracking-tight">
-                                        {selectedEvent.details.fullTitle}
-                                    </h2>
+                                    <div className="text-center md:text-left mb-12">
+                                        <div className="flex justify-center md:justify-start mb-8">
+                                            <img src={lvrnLogo} alt="LVRN Experience" className="h-16 md:h-20 w-auto rounded-xl shadow-lg border border-white/10" />
+                                        </div>
+                                        <h2 className="text-4xl md:text-6xl font-black leading-tight uppercase tracking-tight">
+                                            {selectedEvent.details.fullTitle}
+                                        </h2>
+                                    </div>
 
                                     {selectedEvent.details.comingSoon ? (
                                         /* Coming Soon Content */
@@ -303,6 +313,17 @@ const Events = () => {
                                                 </div>
                                             </div>
 
+                                            {/* Ticketing Partners */}
+                                            <div className="mb-12">
+                                                <h3 className="text-2xl font-black mb-8 uppercase tracking-wide text-center">Ticketing Partners</h3>
+                                                <div className="flex flex-wrap justify-center items-center gap-6 md:gap-12 bg-white/5 p-8 rounded-[2rem] border border-white/10">
+                                                    <img src={bookMyShowLogo} alt="BookMyShow" className="h-12 md:h-14 w-auto object-contain hover:scale-110 transition-transform" />
+                                                    <img src={districtLogo} alt="District" className="h-12 md:h-14 w-auto object-contain hover:scale-110 transition-transform" />
+                                                    <img src={secureMySpotLogo} alt="SecureMySpot" className="h-12 md:h-14 w-auto object-contain hover:scale-110 transition-transform" />
+                                                    <img src={grabMySpotLogo} alt="GrabMySpot" className="h-12 md:h-14 w-auto object-contain hover:scale-110 transition-transform" />
+                                                </div>
+                                            </div>
+
                                             {/* Featured Artists */}
                                             <div className="mb-12">
                                                 <h3 className="text-2xl font-black mb-6 uppercase tracking-wide">
@@ -346,9 +367,10 @@ const Events = () => {
                             </div>
                         </motion.div>
                     </motion.div>
-                )}
-            </AnimatePresence>
-        </motion.div>
+                )
+                }
+            </AnimatePresence >
+        </motion.div >
     );
 };
 
